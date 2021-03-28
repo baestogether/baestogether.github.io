@@ -10,7 +10,7 @@ body
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 300;
 		font-size: 13px;
-		overflow-x: hidden; 
+		overflow-x: hidden;
 	}
 p {
 	line-height: 1.6em;
@@ -68,12 +68,12 @@ h2 {
   		        align-items: center;
   		background: none repeat scroll 0 0 #fff;
 	}
-.sk-spinner-three-bounce.sk-spinner 
+.sk-spinner-three-bounce.sk-spinner
 	{
  		width: 70px;
   		text-align: center;
    }
-.sk-spinner-three-bounce div 
+.sk-spinner-three-bounce div
 	{
   		width: 18px;
   		height: 18px;
@@ -86,18 +86,18 @@ h2 {
   /* Prevent first frame from flickering when animation starts */
 
           -webkit-animation-fill-mode: both;
-                  animation-fill-mode: both; 
+                  animation-fill-mode: both;
     }
-.sk-spinner-three-bounce .sk-bounce1 
+.sk-spinner-three-bounce .sk-bounce1
 	{
         -webkit-animation-delay: -0.32s;
-                animation-delay: -0.32s; 
+                animation-delay: -0.32s;
     }
 
-.sk-spinner-three-bounce .sk-bounce2 
+.sk-spinner-three-bounce .sk-bounce2
 	{
        -webkit-animation-delay: -0.16s;
-               animation-delay: -0.16s; 
+               animation-delay: -0.16s;
     }
 
 @-webkit-keyframes sk-threeBounceDelay {
@@ -122,11 +122,22 @@ h2 {
 /* start countdown */
 #countdown
 	{
-  		background: linear-gradient(90deg, #FF512F 10%, #DD2476 90%);
-  		color: #ffffff;
-		text-align: center;
+  		/*background: linear-gradient(90deg, #FF512F 10%, #DD2476 90%); */
+			background-image: url("../images/background.jpg");
+			color: #ffffff;
+			text-align: center;
+			min-height: 400px;
+  		/*
+
 		min-height: 800px;
-		padding: 140px 0 100px 0;
+		padding: 140px 0 100px 0; */
+		/* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 	}
 #countdown h1
 	{
@@ -150,7 +161,7 @@ ul.countdown
 		margin: 0;
 		padding: 0;
 	}
-ul.countdown span 
+ul.countdown span
 	{
 		font-size: 40px;
 		text-align: center;
@@ -302,7 +313,7 @@ ul.countdown li h3
 	{
 		font-size: 14px;
 		font-weight: 400;
-		font-style: italic;		
+		font-style: italic;
 	}
 .contact address .fa
 	{
@@ -374,8 +385,8 @@ footer p
 }
 
 @media only screen and (max-width: 767px) {
-	#countdown, 
-	.features, 
+	#countdown,
+	.features,
 	.team,
 	.contact {
 		padding: 40px 0;
