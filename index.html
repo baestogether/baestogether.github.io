@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<title>&#127801; Baes Together &#10084;&#65039;</title>
+        <meta name="keywords" content="">
+		<meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!--
+    	Coming Template
+    	http://www.templatemo.com/preview/templatemo_447_coming
+    	-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/animate.min.css">
+		<link rel="stylesheet" href="css/templatemo-style.css">
+	</head>
+<body>
+	<!-- start preloader -->
+	<div class="preloader">
+		<div class="sk-spinner sk-spinner-three-bounce">
+  			<div class="sk-bounce1"></div>
+			<div class="sk-bounce2"></div>
+			<div class="sk-bounce3"></div>
+		</div>
+	</div>
+	<!-- end preloader -->
+	<!---start-countdown-timer-->
+	<section id="countdown">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12">
+					<h1 class="wow bounceIn" data-wow-delay="0.9s">Baes <small>to</small>gether</h1>
+					<h2 class="element">
+						<span class="sub-element">¿Cuanto tiempo llevan los baes juntos?</span>
+					</h2>
+
+                    <!-- Edit js/init.js file for the date and time -->
+
+<script>
+window.onload = function() {
+  // Month Day, Year Hour:Minute:Second, id-of-element-container
+  countUpFromTime("Sep 9, 2016 00:00:01", 'countup1'); // ****** Change this line!
+};
+function countUpFromTime(countFrom, id) {
+  countFrom = new Date(countFrom).getTime();
+  var now = new Date(),
+      countFrom = new Date(countFrom),
+      timeDifference = (now - countFrom);
+
+  var secondsInADay = 60 * 60 * 1000 * 24,
+      secondsInAHour = 60 * 60 * 1000;
+
+  days = Math.floor(timeDifference / (secondsInADay) * 1);
+  years = Math.floor(days / 365);
+  if (years > 1){ days = days - (years * 365) }
+  hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1);
+  mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+  secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+
+  var idEl = document.getElementById(id);
+  idEl.getElementsByClassName('years')[0].innerHTML = years;
+  idEl.getElementsByClassName('days')[0].innerHTML = days;
+  idEl.getElementsByClassName('hours')[0].innerHTML = hours;
+  idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
+  idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
+
+  clearTimeout(countUpFromTime.interval);
+  countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
+}
+</script>
+
+<style>
+.countup {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.countup .timeel {
+  display: inline-block;
+  padding: 10px;
+  background: #151515;
+  margin: 0;
+  color: white;
+  min-width: 2.6rem;
+  margin-left: 13px;
+  border-radius: 10px 0 0 10px;
+}
+.countup span[class*="timeRef"] {
+  border-radius: 0 10px 10px 0;
+  margin-left: 0;
+  background: #e8c152;
+  color: black;
+}
+</style>
+<div class="countup" id="countup1">
+  <span class="timeel years">00</span>
+  <span class="timeel timeRefYears">años</span>
+  <span class="timeel days">00</span>
+  <span class="timeel timeRefDays">días</span>
+  <span class="timeel hours">00</span>
+  <span class="timeel timeRefHours">horass</span>
+  <span class="timeel minutes">00</span>
+  <span class="timeel timeRefMinutes">minutos</span>
+  <span class="timeel seconds">00</span>
+  <span class="timeel timeRefSeconds">segundos</span>
+</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!---End-countdown-timer-->
+
+
+	<!-- start team -->
+	<section class="team">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="title wow bounceIn">
+						<h2>Cositas</h2>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 border_right border_bottom wow fadeIn" data-wow-delay="0.6s">
+					<div class="media">
+						<div class="pull-left media-object">
+							<img src="images/Spotify.png" class="img-circle img-responsive" alt="team img">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading text-uppercase">Spotify playlist</h4>
+							<h5>Música</h5>
+							<p>Lista de canciones que le recuerdan a ella.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 border_bottom wow fadeIn" data-wow-delay="0.6s">
+					<div class="media">
+						<div class="pull-left media-object">
+							<img src="images/grogu.jpg" class="img-circle img-responsive" alt="team img">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading text-uppercase">Grogu</h4>
+							<h5>The Mandalorian</h5>
+							<p>Una de las series que más le gustan a ella por la aparición del ser más tierno del universo: Grugu</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 border_right wow fadeIn" data-wow-delay="0.6s">
+					<div class="media">
+						<div class="pull-left media-object">
+							<img src="images/tik-tok.png" class="img-circle img-responsive" alt="team img">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading text-uppercase">Tik Tok</h4>
+							<h5>Aplicacion</h5>
+							<p>Solo mira, de vez en cuando...</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6 wow fadeIn" data-wow-delay="0.6s">
+					<div class="media">
+						<div class="pull-left media-object">
+							<img src="images/gizmo.jpg" class="img-circle img-responsive" alt="team img">
+						</div>
+						<div class="media-body">
+							<h4 class="media-heading text-uppercase">Gizmo</h4>
+							<h5>Los Gremlins</h5>
+							<p>Si pudiera tener a Gizmo ella sí que cumpliría las tres normas básicas.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- end team -->
+
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/countdown.js"></script>
+	<script src="js/init.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/typed.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>
